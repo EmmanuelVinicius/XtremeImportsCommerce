@@ -1,0 +1,19 @@
+{
+  "name": "cezerin2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-api": "npm explore cezerin2 -- pm2 start process.json & npm run start-store",
+    "start-store": "npm explore cezerin2-store -- pm2 start process.json & npm run start-admin",
+    "start-admin": "npm explore cezerin2-admin -- pm2 serve ./dist 3002"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cezerin2": "file:cezerin2",
+    "cezerin2-admin": "file:cezerin2-admin",
+    "cezerin2-store": "file:cezerin2-store"
+  }
+}
