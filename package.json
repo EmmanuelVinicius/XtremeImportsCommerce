@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-api": "npm explore cezerin2 -- pm2 start process.json & npm run start-store",
+    "start": "npm explore cezerin2 -- pm2 start process.json & npm run start-store",
     "start-store": "npm explore cezerin2-store -- pm2 start process.json & npm run start-admin",
     "start-admin": "npm explore cezerin2-admin -- pm2 serve ./dist 3002"
   },
