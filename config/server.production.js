@@ -31,20 +31,25 @@ module.exports = {
 
 	// smpt server parameters
 	smtpServer: {
-		host: process.env.SMTP_HOST || '',
+		host: process.env.SMTP_HOST || 'in-v3.mailjet.com',
 		port: process.env.SMTP_PORT || 587,
 		secure: process.env.SMTP_SECURE || false,
-		user: process.env.SMTP_USER || '',
-		pass: process.env.SMTP_PASS || '',
-		fromName: process.env.SMTP_FROM_NAME || '',
-		fromAddress: process.env.SMTP_FROM_ADDRESS || ''
+		user: process.env.SMTP_USER || 'bea1dcd33f791b595d0199c964cb7deb',
+		pass: process.env.SMTP_PASS || 'dd35bd51b5f9e64a9c94205c93f7c4eb',
+		fromName: process.env.SMTP_FROM_NAME || 'Xtreme Imports',
+		fromAddress:
+			process.env.SMTP_FROM_ADDRESS || 'no-reply@xtremeimports.com.br'
 	},
 
 	// key to sign tokens
-	jwtSecretKey: process.env.JWT_SECRET_KEY || '-',
+	jwtSecretKey:
+		process.env.JWT_SECRET_KEY ||
+		'4A1DF93B724116879E2DD47777CD7E2B9B85EC4A9F7B2DF61656C782A8A10C02',
 
 	// key to sign store cookies
-	cookieSecretKey: process.env.COOKIE_SECRET_KEY || '-',
+	cookieSecretKey:
+		process.env.COOKIE_SECRET_KEY ||
+		'ABBD0BF46A2B15603E171BD82FA7E3043DB760B2EDC623A84C71221487ED0EEF',
 
 	// path to uploads
 	categoriesUploadPath: 'public/content/images/categories',
@@ -59,7 +64,7 @@ module.exports = {
 	themeAssetsUploadUrl: '/assets/images',
 
 	// store UI language
-	language: process.env.LANGUAGE || 'en',
+	language: process.env.LANGUAGE || 'pt_BR',
 
 	// used by API
 	orderStartNumber: 1000,
