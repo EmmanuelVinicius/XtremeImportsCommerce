@@ -2,7 +2,7 @@ version: '3'
 
 services:
   cezerin2:
-    image: cezerin2/cezerin2
+    image: cezerin2/Dockerfile
     ports:
       - 3001:80
     environment:
@@ -18,7 +18,7 @@ services:
     restart: always
 
   cezerin2-store:
-    image: cezerin2/cezerin2-store
+    image: cezerin2-store/Dockerfile
     environment:
       - API_BASE_URL=http://cezerin2/api/v1
       - AJAX_BASE_URL=http://cezerin2/ajax
@@ -29,7 +29,7 @@ services:
     restart: always
 
   admin:
-    image: cezerin2/cezerin2-admin
+    image: cezerin2-admin/Dockerfile
     ports:
       - 3002:80
     depends_on:
