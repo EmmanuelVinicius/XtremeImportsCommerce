@@ -1,1 +1,1 @@
-web: exec pm2 start process.json
+web: pm2 start process.json
