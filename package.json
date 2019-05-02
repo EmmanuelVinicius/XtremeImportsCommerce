@@ -37,7 +37,6 @@
     "url": "https://github.com/cezerin2/cezerin2"
   },
   "scripts": {
-    "postinstall": "npm i -g pm2",
     "setup": "node -r esm src/setup.js",
     "theme:install": "./scripts/theme-install.sh",
     "theme:export": "./scripts/theme-export.sh",
